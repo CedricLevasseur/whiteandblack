@@ -109,21 +109,7 @@ article h2 {
 	font-size : 24px;
 }
 
-/*sticky footer
-html { height : 100%;}
-body { position : relative; }
-footer { position : absolute; 
-	bottom : 0;
-	left : 0;
-	right: 0;
-}
-main {
-	min-height : 100%
-	
-}
-
-
-end sticky footer*/
+/* Sticky footer trick */
 body {
 	display : table;
 	width : 100%;
@@ -132,6 +118,8 @@ footer {
 	display : table-row;
 	height : 100px;
 }
+/* end Sticky footer trick */
+
 
 footer p { 
 	border-top : 1px dashed black; 
