@@ -94,6 +94,7 @@ main h2 footer {
 	-webkit-transform-origin : 10px 10px;
 	-o-transform-origin : 10px 10px;
 	filter:grayscale(1);
+	-webkit-filter:grayscale(1);
 
 }
 #photo:hover {
@@ -101,4 +102,5 @@ main h2 footer {
 	-moz-transform: scale(0.75) rotate(0deg) translate(0px, 0px) ;
 	-o-transform: scale(0.75) rotate(0deg) translate(0px, 0px) ;
 	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
 }
