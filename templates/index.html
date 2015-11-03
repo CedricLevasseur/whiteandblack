@@ -9,7 +9,7 @@
                 <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
                 <footer class="post-info">
                     <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    <address class="vcard author">Par
+                    <address class="vcard author">par
                     {% for author in article.authors %}
                         <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                     {% endfor %}
