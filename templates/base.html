@@ -32,14 +32,11 @@
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/font.css" type="text/css" />
 </head>
-
 <body id="index" class="home">
-</header>
         <header id="banner" class="body">
 		<img id="photo" src="/theme/photo2.jpg">
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</h1>
 		<h2>{{ SITE_SUBTITLE }}</h2>
-        </header><!-- /#banner -->
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
@@ -55,16 +52,20 @@
             {% endfor %}
           {% endif %}
         {% endif %}
-        </ul></nav><!-- /#menu -->
+        </ul>
+	</nav><!-- /#menu -->
+        </header><!-- /#banner -->
+	
 	<main>
         {% block content %}
+
+        {% endblock content %}
 	</main>
-        {% endblock %}
+
         <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <p id="about" class="vcard body">
+                Blog propulse par <a href="http://getpelican.com/">Pelican</a>
+                </p><!-- /#about -->
         </footer><!-- /#contentinfo -->
 </body>
 </html>
