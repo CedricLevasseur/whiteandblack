@@ -1,3 +1,9 @@
+html {
+	overflow-x:hidden;
+	margin-left : 20px;
+	margin-right : 20px;
+}
+
 header h1 {
   font: 400 70px/0.8 'AmericanaRegular', Helvetica, sans-serif;
   color: #000;
