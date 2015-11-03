@@ -1,6 +1,6 @@
 @font-face {
     font-family:"AmericanaRegular";
-    src: url("./theme/americanatest.ttf") /* TTF file for CSS3 browsers */
+    src: url("/theme/fonts/americanatest.ttf") /* TTF file for CSS3 browsers */
 }
 @font-face {
 	font-family: 'Cookie';
