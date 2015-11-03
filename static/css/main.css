@@ -39,7 +39,7 @@ header #menu li {
 	padding-left : 10px;
 	padding-right : 10px;
 	background-color : black;
-	
+	display: inline;	
 	color : white;
 
 }
@@ -64,11 +64,28 @@ a:active {
 	text-decoration : underline;
 	border-bottom : none;  
 }
+header #menu li a {
+	color : white;
+}
+header #menu li a:link {
+	color : white;
+}
+header #menu li a:visited {
+	color : white;
+}
+header #menu li a:active {
+	color : black;
+}
 
+header #menu li:active {
+	background-color:gray;
+}
 
 h1 {  }
 
-body { background-image : url(../bg.png); }
+body { 
+	background-image : url(../bg.png); 
+}
 main { 
 	width:85%;
 	margin : auto;
