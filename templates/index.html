@@ -16,7 +16,7 @@
                     </address>
                 </footer><!-- /.post-info -->
 		</h2>
-                <article class="entry-content"> {{ article }} </article><!-- /.entry-content -->
+                <article class="entry-content"> {{ article.summary }} </article><!-- /.entry-content -->
 {% endfor %}
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
