@@ -100,3 +100,5 @@ main h2 footer {
 	filter:grayscale(0);
 	-webkit-filter:grayscale(0);
 }
+
+address { display: inline;}
