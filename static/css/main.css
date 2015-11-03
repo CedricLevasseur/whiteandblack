@@ -120,4 +120,7 @@ main h2 footer {
 	-webkit-filter:grayscale(0);
 }
 
-address { display: inline;}
+address { 
+	display: inline;
+	font-style : normal;
+}
