@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<section id="content">
+<section id="content-index">
 {% block content_title %}
-<h2>Tous les articles</h2>
+<h1>Tous les articles</h1>
 {% endblock %}
 
 {% for article in articles_page.object_list %}
@@ -16,7 +16,12 @@
                     </address>
                 </footer><!-- /.post-info -->
 		</h2>
-                <article class="entry-content"> {{ article.summary }} </article><!-- /.entry-content -->
+        	        <article class="entry-content"> <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.summary }}</a>
+</article><!-- /.entry-content -->
+		{% if loop.index == 1 %}
+        	        <article class="entry-content"> <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.content|striptags|truncate(1000, False, "<a href=\"{{ SITEURL }}/{{ article.url }}\" > &Gt;Lire la suite&hellip; </a>" ) }}</a>
+</article><!-- /.entry-content -->
+		{% endif %}
 {% endfor %}
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
