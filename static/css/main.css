@@ -217,9 +217,19 @@ address {
 
 
 /* social */
+	.social {
+		position:relative;
+		float:right;
+	}
 	.social a {
 		background-repeat: no-repeat;
 		background-position: 3px 6px;
+	}
+	.social a, .social a:link{
+		border-bottom: none;
+	}
+	.social li {
+		list-style-type: none;		
 	}
 	
 		/* Icons */
@@ -234,6 +244,8 @@ address {
 		.social a[href*='twitter.com']:before {content: url('../images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='linkedin.com']:before {content: url('../images/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;}
         .social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
+        .social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
+        .social a[href*='github.com']:before {content: url('../images/icons/github.png'); margin-right: 2px; vertical-align: -3px;}
 
 	
 
