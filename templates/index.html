@@ -19,7 +19,7 @@
         	        <article class="entry-content"> <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.summary }}</a>
 </article><!-- /.entry-content -->
 		{% if loop.index == 1 %}
-        	        <article class="entry-content"> <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.content|striptags|truncate(1000, False, "<a href=\"{{ SITEURL }}/{{ article.url }}\" > &Gt;Lire la suite&hellip; </a>" ) }}</a>
+        	        <article class="entry-content"> {{ article.content|truncate(1000, False) }}<a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Lire la suite&Gt; </a>
 </article><!-- /.entry-content -->
 		{% endif %}
 {% endfor %}

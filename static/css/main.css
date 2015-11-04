@@ -79,12 +79,11 @@ header #menu li a:link {
 header #menu li a:visited {
 	color : white;
 }
-header #menu li a:active {
-	color : black;
-}
 
-header #menu li:active {
-	background-color:gray;
+header #menu li:hover {
+	background-color:lightgray;
+	border : 1px solid gray;
+	font:black;
 }
 
 h1 {  }
@@ -101,14 +100,27 @@ article {
 	border-left :  1px solid grey;
 	padding-left : 10px;
 }
+article header {
+	margin-top: 15px;
+}
+
 article header h1 {
-  	font: 400 40px/0.8 'AmericanaRegular', Helvetica, sans-serif;
+  	font: 400 40px/0.8  Helvetica, sans-serif;
 	text-weight : bold;
 	font-variant: small-caps;
 	font-stretch : extra-expanded;
 	display : inline;
 	
 }
+article header h1 a, 
+article header h1 a:link, 
+article header h1 a:hover, 
+article header h1 a:active
+{ 
+	border-bottom : none;
+	text-decoration : none;
+}
+/*
 article header h2 {
   	font: 400 70px/0.8 'AmericanaRegular', Helvetica, sans-serif;
 	text-weight : bold;
@@ -116,8 +128,22 @@ article header h2 {
 	font-stretch : extra-expanded;
 	font-size : 35px;
 }
-
-
+*/
+a.readmore {
+	background-color : black;
+	border-radius : 5px;
+	color:white;
+	text-decoration:none;
+	margin-left, margin-right : 3px;
+} 
+a.readmore:active {
+	text-decoration:none;
+}
+a.readmore:hover {
+	background-color:lightgray;
+	border : 1px solid gray;
+	font-color:black;
+}
 /* Sticky footer trick */
 body {
 	display : table;
@@ -182,9 +208,9 @@ address {
 #content-index > h1 {
 	text-align : center;
 }
-#content-index a:hover, #content-index a:active {
+/*#content-index a:hover, #content-index a:active {
 	border : 1px dashed black;
 	text-decoration : none;
 	
 }
-
+*/

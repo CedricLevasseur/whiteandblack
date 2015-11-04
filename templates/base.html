@@ -64,9 +64,15 @@
 	</main>
 
         <footer id="contentinfo" class="body">
+		
                 <p id="about" class="vcard body">
                 Blog propulse par <a href="http://getpelican.com/">Pelican</a>
                 </p><!-- /#about -->
+	<aside id="social"><ul>
+	{% for name,link in SOCIAL %}
+		<li><a href="{{link}}">{{ name }}</a></li>
+	{% endfor %}
+	</ul></aside>
         </footer><!-- /#contentinfo -->
 </body>
 </html>
